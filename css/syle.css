@@ -1,0 +1,800 @@
+*:root {
+  --bg-color-white: #fff;
+  --main-font: "Rubik";
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  color: #555;
+  font-weight: 400;
+  margin: 0 auto;
+}
+html {
+  /* the below line  means 1 rem = 10px */
+  /*  now we will sell height and width and font-sized according the the rem */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+/****************************/
+/* heading */
+/****************************/
+/* .sticky{
+  position: sticky; 
+  top: 0;
+  background-color: #fff;
+  z-index: 999;
+  padding-top: 0;
+  padding-bottom: 0;
+  box-shadow: 0 1.2rem 3rem rgba(0, 0, 0, 0.352)
+  ;
+} */
+.header {
+  /* width: 100%; */
+  background-color: #fae5d3;
+  /* background-color: #259f0c; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 7rem;
+  height: 9rem;
+  /* position: sticky; */
+}
+.logo {
+  height: 2.9rem;
+}
+/****************************/
+/*Navigation */
+/****************************/
+
+
+.nav-links-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 4rem;
+  margin-left: 14rem;
+}
+/****************************/
+ /* nevigation open-close for mobile */
+/****************************/
+.mobile-navbar-button{
+  border: none;
+  background: none;
+}
+.menu-nav{
+  font-size: 4rem;
+}
+.close-menu{
+  display: none;
+}
+.open-menu{
+  display: none;
+}
+
+
+.nav-links-all:link,
+.nav-links-all:visited {
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  color: #212020;
+  transition: all 0.3s;
+}
+
+.nav-links-all:hover,
+.nav-links-all:active {
+  color: #e17517;
+}
+
+.nav-links-all.nav-link-last:link,
+.nav-links-all.nav-link-last:visited {
+  padding: 1.2rem 1.8rem;
+  background-color: #e67e22;
+  border-radius: 1.5rem;
+  /* color: var(--bg-colar-wight); */
+  display: inline-block;
+  transition: all 0.4s;
+}
+.nav-links-all.nav-link-last:hover,
+.nav-links-all.nav-link-last:active {
+  background-color: #b8651b;
+  color: #212020;
+
+  transform: translateY(2px);
+}
+
+/****************************/
+/* hero section */
+/****************************/
+
+.section-hero {
+  background-color: #fae5d3;
+  padding: 5rem 0;
+}
+
+.hero {
+  /* 120 rem means 120x10=1200px */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 130rem;
+  margin: 0 auto;
+  align-items: center;
+  gap: 10rem;
+  padding: 0 4rem;
+}
+
+.hero-img-box img {
+  width: 100%;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-bottom: 4.8rem;
+  padding-bottom: 1.5rem;
+  font-family: var(--main-font);
+}
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  font-size: 2rem;
+  background-color: #e67e22;
+  font-weight: 700;
+  padding: 1.6rem 3.2rem;
+  border-radius: 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+.btn-full:link,
+.btn-full:visited {
+  background-color: #e67e22;
+  color: #fff;
+  transition: 0.3s;
+}
+.btn-full:hover {
+  background-color: #b8651b;
+}
+.btn:active {
+  transform: translateY(2px);
+}
+
+.btn-outline:link,
+.btn-outline:visited {
+  background-color: #fff;
+  color: #333;
+  transition: 0.3s;
+}
+.btn-outline:hover,
+.btn-outline:active {
+  border: -2px solid #fff;
+  transform: translateY(2px);
+  box-shadow: inset 0 0 4px #fff;
+}
+.margin-right-sm {
+  margin-right: 1rem;
+}
+.hero-customers {
+  margin-top: 5rem;
+}
+.hero-customers .customer-imgs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-customers img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  border: 4px solid white;
+  margin-right: -1.8rem;
+}
+.customer-text {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.customer-imgs .customer-text {
+  margin-left: 3rem;
+}
+.customer-imgs .customer-text span {
+  color: #e67e22;
+  font-weight: 700;
+}
+/****************************/
+/*  section-2 featured section*/
+/****************************/
+.section-featured{
+    padding: 3.6rem 0rem;
+}
+.featured-text {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 2.3rem;
+}
+
+.featured-imgs{
+    display: flex;
+    /* justify-content: space-evenly; */
+    justify-content: center;
+    gap: 6rem;
+}
+.featured-imgs img{
+    margin-top: 1rem;
+    height: 3.2rem;
+    filter:
+    brightness(0);
+    opacity: 60%;
+}
+
+/****************************/
+/*  section-3 How it Works */
+/****************************/
+.section-how {
+  padding: 9rem 0;
+}
+
+.step-number {
+  font-size: 9rem;
+  font-weight: 600;
+  /* font-family: "Rubik"; */
+  color: #ddd;
+  margin-bottom: 1.4rem;
+}
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+
+.step-img-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.step-img {
+  width: 35%;
+}
+/* for creating div child element use before after as well  */
+.step-img-box::before {
+  content: "";
+  width: 60%;
+  padding-bottom: 60%;
+  border-radius: 50%;
+  /* background-color: #e17517; */
+  background-color: #e9d7c8;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.step-img-box::after {
+  content: "";
+  width: 50%;
+  padding-bottom: 50%;
+  border-radius: 50%;
+  /* background-color: #e17517; */
+  background-color: #dac4b1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+/****************************/
+/*  Meal Section */
+/****************************/
+.section-meal {
+  padding: 9rem 0;
+
+}
+.meal-img{
+  width: 100%;
+  /* border-top-left-radius: 10px;
+  border-top-right-radius: 10px; */
+}
+.meal-title{
+  font-size: 2.1rem;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.meal-properties{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+.meal-property{
+  font-size: 1.7rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+.meal-icon{
+  font-size: 2.5rem;
+  color: #e67e22;
+}
+.meal-tag{
+  display: inline-block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  margin: 1rem 0;
+  padding: 0.4rem 0.8rem;
+  border-radius: 90px;
+  color: #333;
+
+}
+.tag-Vegetarian{
+    background-color: rgb(38, 210, 90);
+}
+.tag-vegan{
+  background-color: #51cf66;
+}
+.tag-paleo{
+  background-color: #ffd43b;
+}
+.meal{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+}
+.meal:hover{
+  transform: translateY(-10px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+
+}
+.meal-content{
+  padding: 3rem 4rem 0rem 4rem;
+}
+
+/* meals list  */
+.meals-diet{
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #333;
+}
+.meals-category{
+  margin-top: 2rem;
+ list-style: none;
+ display: flex;
+ flex-direction: column;
+ gap: 1.5rem;
+}
+.food-list{
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+}
+.food-list ion-icon{
+  color: #b8651b;
+  font-weight: 900;
+  font-size: 3rem;
+}
+.recipe-link-visit{
+      /* margin-top: 5rem; */
+      margin: 5rem auto 0;
+    font-size: 2rem;
+  text-align: center;
+  width: fit-content;
+ }
+.recipe-links:link,
+.recipe-links:visited{
+  color: #e17517;
+  /* display: inline-block; */
+  align-items: center;
+  text-decoration: none;
+  border-bottom: 2px solid #e17517;
+  padding-bottom: 2px;
+  transition: all 0.3s linear;
+}
+.recipe-links:hover, 
+.recipe-links:active{
+      font-size: 2.1rem;
+      border-bottom: 2px solid transparent;
+   
+
+}
+
+.recipe-links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+} 
+/****************************/
+/*  TESTIMONIAL SECTION */
+/****************************/
+.section-testimonials{
+  padding: 9.6rem 0;
+
+}
+.testimonial-container{
+    background-color: #fdf2e9;
+    position: relative;
+
+}
+.testimonial-img{
+  height: 6rem;
+  border-radius: 50%;
+}
+.testimonials{
+  display: grid;
+  grid-template-rows: repeat(2,1fr);
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 4rem;
+  height: fit-content;
+  /* top: 50%; */
+  /* padding:4rem ; */
+  /* position: absolute; */
+  /* top: 50%; */
+
+}
+.testimonial-text{
+  font-size: 1.6rem;
+   line-height:1.8;
+}
+.testimonial-name{
+  margin-top: 1.5rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #555;
+}
+.testimonial-intro{
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+ justify-content: center;
+ padding-left: 4rem;
+ gap: 4rem;
+}
+
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(6,1fr);
+  gap: 2rem;
+  padding: 2rem;
+  align-items: center;
+}
+.gallery img{
+  /* width: 100%; */
+  width: 98%;
+  height: 98%;
+    transition: all 0.3s ease-out;
+
+}
+.gallery-img{
+  overflow: hidden;
+}
+.gallery img:hover{
+  scale: 1.2;
+}
+
+/****************************/
+/* pricing- section*/
+/****************************/
+.section-pricing{
+  padding: 8rem 0;
+}
+.price-box{
+  /* padding: 3rem 2rem; */
+}
+.starter-price{
+  width: 75%;
+  padding: 4rem;
+  border: 2px solid #c5ae99;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+  justify-self: end;
+}
+
+.starter-price .subheading,
+.complete-price .subheading{
+  font-size: 2rem;
+}
+.service-price span{
+font-size: 5.5rem;
+font-weight: 800;
+color: #212020;
+}
+.service-price ion-icon{
+  font-size: 3rem;
+  color: #212020;
+}
+.about-price{
+  font-size: 1.5rem;
+}
+.price-benefits{
+  list-style-type: none;
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+.price-benefit{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: left;
+}
+.price-benefit ion-icon{
+  color: #e17517;
+  font-size: 3rem;
+  font-weight: 100;
+}
+.starter-price-button{
+  margin-top: 1.5rem;
+}
+
+.starter-price-link:link,
+.starter-price-link:visited{
+  display: inline-block;
+  padding: 1.2rem 1.8rem;
+    background-color: #e17517;
+    border-radius: 5px;
+   text-decoration: none;
+   font-size: 2rem;
+   color: var(--bg-color-white);
+   font-weight: 600;
+   text-align: center;
+   transition: all 0.3s;
+}
+.starter-price-link:hover,
+.starter-price-link:active{
+  background-color: #ce6203;
+}
+.complete-price{
+   width: 75%;
+  padding: 4rem;
+  background-color: #fdf2e9;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.complete-price::after{
+  content: "Best Value";
+  position: absolute;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0.8rem 8rem;
+  color: #212020;
+  background-color: #ecf00d;
+  transform: rotate(45deg);
+  right: -20%;
+  top: 7%;
+
+}
+
+
+.about-plans{
+  font-size: 1.7rem;
+  margin-top: 5rem;
+  text-align: center;
+  margin-bottom: 6rem;
+}
+.benefits-icon{
+  height: 4rem;
+  width: 4rem;
+  padding: 1rem;
+  background-color: #fdf2e9;
+  border-radius: 50%;
+  color: #e67e22;
+}
+.service-benefits{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.benefit-title{
+  font-size: 2rem;
+  font-weight: 700;
+  color: #212020;
+}
+.benefit-description{
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+/****************************/
+/* cta section*/
+/* /**************************** */
+
+.cta-section{
+  padding: 9rem 0;
+}
+.cta-content{
+  background-color: #e67e22;
+  border-radius: 11px;
+ box-shadow: 2px 4px 17px rgba(0, 0, 0, 0.8);
+ overflow: hidden;
+
+}
+.cta-grid{
+  grid-template-columns: 2fr 1.2fr;
+}
+.cta-text-box{
+  padding: 4rem;
+  
+}
+.cta-form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+    row-gap: 3.2rem;
+      column-gap: 4rem;  
+      color: #212020;
+}
+
+.cta-form label{
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+
+.cta-form input,
+.cta-form select,
+.cta-form button{
+    padding: 1.5rem;
+  width: 100%;
+    border: none;
+    border-radius: 6px;
+   font-family: inherit;
+  background-color: rgb(231, 225, 225);
+    font-size: 1.8rem;
+ align-self: end;
+ transition: all 0.3s ease-in;
+ color: inherit;
+}
+.cta-form button{
+background-color: #45260a;
+padding: 1.6rem;
+color: #ddd;
+font-weight: 680;
+display: block;
+cursor: pointer;
+
+}
+.cta-form button:hover{
+  background-color: #ddd;
+  color: #45260a;
+}
+
+.cta-heading{
+  margin-bottom: 3rem;
+     font-size: 4rem;
+        color: #45260a;
+   font-weight: 700; 
+}
+.cta-text{
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 4.8rem;
+    line-height: 1.7;
+}
+.cta-form *:focus{
+  outline: none;
+  box-shadow: 0 0 0 0.6rem rgba(250, 242, 233, 0.5);
+}
+
+.cta-eating-img{
+  /* height: 100%; */
+  /* overflow: hidden; */
+  filter: opacity(70%);
+}
+
+.women-enjoy-food{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/****************************/
+/* footer */
+/****************************/
+footer{
+  padding: 12rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.164);
+}
+
+.footer-grid{
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+ 
+}
+.logo-column{
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.omnifood-footer-logo{
+  margin-bottom: 3rem;
+}
+.omnifood-footer-logo img{
+  /* width: 10rem; */
+  height: 2.2rem;
+}
+.footer-social-links{
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+  font-size: 2rem;
+}
+.social-link a{
+  color: #555;
+}
+.copywrite-term{
+  font-size: 1.5rem;
+  margin-top: 5rem;
+  line-height: 1.5;
+}
+.contact-column{
+ display: flex;
+ flex-direction: column;
+ 
+}
+.footer-heading{
+  font-size: 2rem;
+  color: #555;
+  font-weight: 500;
+  margin-bottom: 2.5rem;
+}
+.footer-adress{
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+.contact-column a{
+  text-decoration: none;
+}
+.footer-contact,
+.footer-email{
+  margin-top: 2rem;
+}
+.footer-contact a,
+.footer-email a{
+  font-size: 1.6rem;
+  color: #555;
+}
+.footer-links{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.6rem;
+}
+.footer-link a{
+      text-decoration: none;
+        color: #555;
+}
+.footer-link{
+  font-size: 1.8rem;
+}
