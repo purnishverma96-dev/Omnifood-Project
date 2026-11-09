@@ -1,9 +1,15 @@
-const BtnNavClose = document.querySelector(".close-menu");
-const BtnNavCOpne = document.querySelector(".open-menu");
+const btnNavClose = document.querySelector(".close-menu");
+const btnNavOpen = document.querySelector(".open-menu");
+const navLinks = document.querySelector(".nav-links")
+btnNavOpen.addEventListener("click", function(){
+   navLinks.style.visibility = "visible";
+   btnNavClose.style.display = "block";
+   btnNavOpen.style.display = "none";
+});
 
-BtnNavCOpne.addEventListener("click", function(){
-    classList.add("nav-links");
-});
-BtnNavClose.addEventListener("click",function(){
-  classList.remove("nav-links");
-});
+btnNavClose.addEventListener("click" , function(){
+      navLinks.style.visibility = "hidden";
+   btnNavClose.style.display = "none";
+   btnNavOpen.style.display = "block";
+
+})

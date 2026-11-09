@@ -185,27 +185,29 @@ in media queries it's diffrent */
 }
 /* i will do it once i learned js lots of confusion for navigation over here  */
 /*  making navbar for mobile  */
-  .nav-links{
-    position: absolute;
-    font-size: 2rem;
-    top: 0;
-    left: 0;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height:100vh;
-    width: 100%;
-    /* if we do below display none */
-    /* 1. no transition we can apply */
-    /* so for hiding you can use but not animate */
-    /* display: none; */
-    /* opacity: 0% even if hide but links will be clickable so not good; */
- visibility: hidden;
+
+ .nav-links{
+  position: absolute;
+  /* font-size: 2rem; */
+  top: 0;
+  left: 0;
+ background-color: #fff;
+  display: flex;
+  justify-content: center;
+ align-items: center;
+  height:100vh;
+  width: 100%;
+  visibility: hidden;
   }
   .nav-links-list{
     flex-direction: column;
+    gap: 5rem;
+    margin-left: 0;
   }
+.nav-links-all:link, .nav-links-all:visited {
+    font-size: 3rem;
+     
+}
  .open-menu{
     display: block;
   }
